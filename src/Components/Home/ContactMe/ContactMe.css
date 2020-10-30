@@ -1,0 +1,15 @@
+.page{
+    padding-bottom: 125px;
+}
+
+.top{
+    padding-top: 92px;
+}
+
+@media (max-width: 991px){
+    .page{
+        padding-bottom: 104px;
+    }
+}
+
+
