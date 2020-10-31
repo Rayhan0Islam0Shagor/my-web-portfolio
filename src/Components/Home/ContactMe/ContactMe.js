@@ -6,6 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaFacebook, FaInstagramSquare, FaLinkedin, FaMedium, FaGithub } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 toast.configure();
 const ContactMe = () => {
@@ -43,6 +46,13 @@ const ContactMe = () => {
                     <br />
                     <input className="btn btn-outline-warning w-100" type="submit" value="Send" />
                 </form>
+                <div className="p-5 text-center">
+                    <a target="_blank" className="text-light" href="https://github.com/Rayhan0Islam0Shagor"><FaGithub className="ml-0" /></a>
+                    <a target="_blank" className="text-light" href="https://www.linkedin.com/in/rayhan045"><FaLinkedin className="ml-2" /></a>
+                    <a target="_blank" className="text-light" href="https://www.facebook.com/Rayhan19980/"><FaFacebook className="ml-2" /></a>
+                    <a target="_blank" className="text-light" href="https://www.instagram.com/is_rayhan_sh/"><FaInstagramSquare className="ml-2" /></a>
+                    <a target="_blank" className="text-light" href="https://medium.com/@raihanislamshagor2"><FaMedium className="ml-2" /></a>
+                </div>
             </div>
         </div>
     );

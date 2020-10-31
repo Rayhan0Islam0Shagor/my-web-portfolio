@@ -29,9 +29,9 @@ const Topbar = () => {
                                 <li className="nav-item pr-5"><NavLink activeClassName="active" to="/contactMe" className="nav-link font-weight-bold">Contact</NavLink></li>
                                 <form class="form-inline">
                                     <div className="pl-3 pr-3 link text-uppercase">
-                                        <Link target="_blank" href={MyPDF} download="Resume-of-rayhan-islam.pdf">
+                                        <a target="_blank" href={MyPDF} download="Resume-of-rayhan-islam.pdf">
                                             download Resume
-                                        </Link>
+                                        </a>
                                     </div>
                                 </form>
                             </ul>

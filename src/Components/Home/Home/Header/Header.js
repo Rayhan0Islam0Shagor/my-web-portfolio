@@ -34,11 +34,11 @@ const Header = () => {
                         </div>
                         <p className="text-light text-break mt-0 pt-0"><strong><FontAwesomeIcon icon={faEnvelopeSquare} /> raihanislamshagor@gmail.com</strong></p>
                         <div className="text-light">
-                            <a target="_blank" className="text-light" to="https://github.com/Rayhan0Islam0Shagor"><FaGithub className="ml-0" /></a>
-                            <a target="_blank" className="text-light" to="https://www.linkedin.com/in/rayhan045"><FaLinkedin className="ml-3" /></a>
-                            <a target="_blank" className="text-light" to="https://www.facebook.com/Rayhan19980/"><FaFacebook className="ml-3" /></a>
-                            <a target="_blank" className="text-light" to="https://www.instagram.com/is_rayhan_sh/"><FaInstagramSquare className="ml-3" /></a>
-                            <a target="_blank" className="text-light" to="https://medium.com/@raihanislamshagor2"><FaMedium className="ml-3" /></a>
+                            <a target="_blank" className="text-light" href="https://github.com/Rayhan0Islam0Shagor"><FaGithub className="ml-0" /></a>
+                            <a target="_blank" className="text-light" href="https://www.linkedin.com/in/rayhan045"><FaLinkedin className="ml-3" /></a>
+                            <a target="_blank" className="text-light" href="https://www.facebook.com/Rayhan19980/"><FaFacebook className="ml-3" /></a>
+                            <a target="_blank" className="text-light" href="https://www.instagram.com/is_rayhan_sh/"><FaInstagramSquare className="ml-3" /></a>
+                            <a target="_blank" className="text-light" href="https://medium.com/@raihanislamshagor2"><FaMedium className="ml-3" /></a>
                         </div>
                         <br />
                         <Link target="_blank" to={MyPDF} download="Resume-of-rayhan-islam.pdf">
