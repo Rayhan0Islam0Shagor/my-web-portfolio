@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Topbar.css';
 import { Link, NavLink } from "react-router-dom";
-import MyPDF from '../../../../resume/Resume-of-rayhan-islam.pdf';
 import logo from '../../../../images/logo.png'
 
 
@@ -27,13 +26,6 @@ const Topbar = () => {
                                 <li className="nav-item pr-4"><NavLink activeClassName="active" to="/projects" className="nav-link font-weight-bold">Projects</NavLink></li>
                                 <li className="nav-item pr-4"><NavLink activeClassName="active" to="/blog" className="nav-link font-weight-bold">Blogs</NavLink></li>
                                 <li className="nav-item pr-5"><NavLink activeClassName="active" to="/contactMe" className="nav-link font-weight-bold">Contact</NavLink></li>
-                                <form class="form-inline">
-                                    <div className="pl-3 pr-3 link text-uppercase">
-                                        <a target="_blank" href={MyPDF} download="Resume-of-rayhan-islam.pdf">
-                                            download Resume
-                                        </a>
-                                    </div>
-                                </form>
                             </ul>
                         </div>
                     </div>
