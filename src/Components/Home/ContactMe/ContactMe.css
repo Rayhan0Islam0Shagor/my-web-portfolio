@@ -1,5 +1,5 @@
 .page{
-    padding-bottom: 125px;
+    padding-bottom: 300px;
 }
 
 .top{
@@ -8,7 +8,7 @@
 
 @media (max-width: 991px){
     .page{
-        padding-bottom: 104px;
+        padding-bottom: 250px;
     }
 }
 

@@ -1,56 +1,45 @@
 import React, { useState } from 'react';
 import './Topbar.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import MyPDF from '../../../../resume/Resume-of-rayhan-islam.pdf';
+import logo from '../../../../images/logo.png'
 
 
 const Topbar = () => {
-    const [showMenu, setShowMenu] = useState(false)
-
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
-    }
 
     return (
-        <header>
-            <div className={`menu-btn ${showMenu ? 'close' : ''}`} onClick={toggleMenu}>
-                <div className="btn-line"></div>
-                <div className="btn-line"></div>
-                <div className="btn-line"></div>
-            </div>
+        <section>
+            <div class="sticky-top">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-transparent ">
+                    <div className="container-fluid">
+                        <Link to="/home" className="navbar-brand pl-5">
+                            <img className="custom-logo" src={logo} alt="logo" />
+                        </Link>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
 
-            <nav className={`menu ${showMenu ? 'show' : ''}`}>
-                <div className={`menu-branding ${showMenu ? 'show' : ''}`}>
-                    <div className="portrait"></div>
-                </div>
-                <ul className={`menu-nav ${showMenu ? 'show' : ''}`}>
-                    <li className={`nav-item ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                        <Link to="home" className="nav-link">
-                            Home
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                        <Link to="about" className="nav-link">
-                            About Me
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                        <Link to="projects" className="nav-link">
-                            My Work
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                        <Link to="blog" className="nav-link">
-                            Blog
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${showMenu ? 'show' : ''}`} onClick={toggleMenu}>
-                        <Link to="contactMe" className="nav-link">
-                            Contact Me
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                        <div className="collapse text-center navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item pr-4"><NavLink activeClassName="active" to="/home" className="nav-link font-weight-bold">Home</NavLink></li>
+                                <li className="nav-item pr-4"><NavLink activeClassName="active" to="/about" className="nav-link font-weight-bold">About</NavLink></li>
+                                <li className="nav-item pr-4"><NavLink activeClassName="active" to="/projects" className="nav-link font-weight-bold">Projects</NavLink></li>
+                                <li className="nav-item pr-4"><NavLink activeClassName="active" to="/blog" className="nav-link font-weight-bold">Blogs</NavLink></li>
+                                <li className="nav-item pr-5"><NavLink activeClassName="active" to="/contactMe" className="nav-link font-weight-bold">Contact</NavLink></li>
+                                <form class="form-inline">
+                                    <div className="pl-3 pr-3 link text-uppercase">
+                                        <Link target="_blank" href={MyPDF} download="Resume-of-rayhan-islam.pdf">
+                                            download Resume
+                                        </Link>
+                                    </div>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
     );
 };
 

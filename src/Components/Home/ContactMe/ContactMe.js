@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Topbar from '../Shared/Topbar/Topbar';
 import './ContactMe.css';
 import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 toast.configure();
 const ContactMe = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
 
     function sendEmail(e) {
         e.preventDefault();
@@ -26,7 +32,7 @@ const ContactMe = () => {
     return (
         <div className="bg-dark page">
             <Topbar />
-            <div className="container w-50 top">
+            <div data-AOS="fade-down" className="container w-50">
                 <form className="contact-form" onSubmit={sendEmail}>
                     <label className="text-light">Name</label>
                     <input required type="text" name="name" className=" form-control mb-4 mr-1 w-100" placeholder="user name" />

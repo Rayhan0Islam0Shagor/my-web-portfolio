@@ -10,7 +10,7 @@ const Home = () => {
         <div className="bg-dark">
             <div className="style-header">
                 <Animation />
-                <div className="header pt-3">
+                <div className="topper">
                     <Topbar />
                     <Header />
                 </div>
