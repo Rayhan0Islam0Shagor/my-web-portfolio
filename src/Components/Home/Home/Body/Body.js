@@ -43,8 +43,8 @@ const Body = () => {
                                         <span>NodeJs</span>
                                     </div>
                                     <div data-AOS="zoom-out" className="d-flex detail justify-content-around pt-2">
-                                        <a target="_blank" className="font-weight-bold text-primary" to={project.sourceCode}><FontAwesomeIcon color="black" icon={faCodeBranch} /> Source code </a>
-                                        <a target="_blank" className="font-weight-bold text-primary" to={project.liveSite}><FontAwesomeIcon color="black" icon={faExternalLinkSquareAlt} /> Live site </a>
+                                        <a target="_blank" className="font-weight-bold text-primary" href={project.sourceCode}><FontAwesomeIcon color="black" icon={faCodeBranch} /> Source code </a>
+                                        <a target="_blank" className="font-weight-bold text-primary" href={project.liveSite}><FontAwesomeIcon color="black" icon={faExternalLinkSquareAlt} /> Live site </a>
                                     </div>
                                 </div>
                             </div>

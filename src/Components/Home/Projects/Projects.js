@@ -40,8 +40,8 @@ const Projects = () => {
                                         </div>
                                         <div className="card-footer">
                                             <div className="d-flex justify-content-around">
-                                                <a className="font-weight-bold text-primary" to={project.sourceCode}><FontAwesomeIcon color="black" icon={faCodeBranch} /> Source code </a>
-                                                <a className="font-weight-bold text-primary" to={project.liveSite}><FontAwesomeIcon color="black" icon={faExternalLinkSquareAlt} /> Live site </a>
+                                                <a target="_blank" className="font-weight-bold text-primary" href={project.sourceCode}><FontAwesomeIcon color="black" icon={faCodeBranch} /> Source code </a>
+                                                <a target="_blank" className="font-weight-bold text-primary" href={project.liveSite}><FontAwesomeIcon color="black" icon={faExternalLinkSquareAlt} /> Live site </a>
                                             </div>
                                         </div>
                                     </div>

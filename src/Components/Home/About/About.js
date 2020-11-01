@@ -57,7 +57,7 @@ const About = () => {
                             </h2>
                             <p className="text-white">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
                             <p className="text-light text-break mt-0 pt-0"><strong><FontAwesomeIcon icon={faEnvelopeSquare} /> raihanislamshagor@gmail.com</strong></p>
-                            <a target="_blank" className="text-light" to="https://www.linkedin.com/in/rayhan045"><button className="btn btn-success w-50">Hire me</button></a>
+                            <a target="_blank" className="text-light" href="https://www.linkedin.com/in/rayhan045"><button className="btn btn-success w-50">Hire me</button></a>
                         </div>
                     </div>
 
